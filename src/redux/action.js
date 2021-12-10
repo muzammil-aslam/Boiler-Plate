@@ -1,7 +1,8 @@
-export function fristData() {
+export function loginDa(data) {
   return (dispatch) => {
     dispatch({
       type: "loginData",
+      data,
     });
   };
 }

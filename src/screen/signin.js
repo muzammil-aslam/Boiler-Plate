@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Paper } from "@mui/material";
-// import { handleBreakpointse } from "@mui/system";
 import { useState } from "react";
+// import { handleBreakpointse } from "@mui/system";
 import {
   auth,
   createUserWithEmailAndPassword,
@@ -37,6 +37,7 @@ export default function Signin() {
         .then((success) => {
           console.log(success);
           let uid = success.user.uid;
+          dis;
 
           set(ref(database, `users/${uid}`), obj);
 
